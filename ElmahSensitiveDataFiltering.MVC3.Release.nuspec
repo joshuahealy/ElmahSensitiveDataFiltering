@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ElmahSensitiveDataFiltering.MVC3</id>
+    <title>ElmahSensitiveDataFiltering</title>
+    <version>0.1.1</version>
+    <authors>Joshua Healy</authors>
+    <owners>Joshua Healy</owners>
+    <description>Package for sanitising sensitive form values in ELMAH logs for MVC3</description>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>ELMAH MVC MVC3 ASP.NET</tags>
+    <projectUrl>https://github.com/appclay/ElmahSensitiveDataFiltering</projectUrl>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Web.Mvc" targetFramework="net40" />
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework="net40" />
+    </frameworkAssemblies>
+    <dependencies>
+      <dependency id="elmah.corelibrary" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="ElmahSensitiveDataFiltering.MVC3\bin\Release\ElmahSensitiveDataFiltering.dll" target="lib\net40" />
+  </files>  
+</package>
