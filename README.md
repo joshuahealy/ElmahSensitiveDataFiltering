@@ -4,10 +4,10 @@ ElmahSensitiveDataFiltering
 Package for sanitising sensitive form values in ELMAH logs for MVC 3 and 4
 
 Install MVC4 Package Via Nuget: 
-PM> Install-Package ElmahSensitiveDataFiltering.MVC4
+__PM> Install-Package ElmahSensitiveDataFiltering.MVC4__
 
 Install MVC3 Package Via Nuget: 
-PM> Install-Package ElmahSensitiveDataFiltering.MVC3
+__PM> Install-Package ElmahSensitiveDataFiltering.MVC3__
 
 Why?
 ====
