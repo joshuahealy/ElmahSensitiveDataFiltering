@@ -37,11 +37,15 @@ namespace ElmahSensitiveDataFiltering
             {
                 lock (_locker)
                 {
-                    var errorModule = GetErrorLogModule(HttpContext.Current.ApplicationInstance);
-                    if (errorModule != null)
+                    //check if the event was attached while we were waiting for the lock
+                    if (!_eventAttached)
                     {
-                        errorModule.Filtering += FilterException;
-                        _eventAttached = true;
+                        var errorModule = GetErrorLogModule(HttpContext.Current.ApplicationInstance);
+                        if (errorModule != null)
+                        {
+                            errorModule.Filtering += FilterException;
+                            _eventAttached = true;
+                        }
                     }
                 }
             }
