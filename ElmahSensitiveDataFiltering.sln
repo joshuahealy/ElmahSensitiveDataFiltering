@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElmahSensitiveDataFiltering", "ElmahSensitiveDataFiltering\ElmahSensitiveDataFiltering.csproj", "{7358E8E7-DB2D-41B0-92C9-51D5671E2FB6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElmahSensitiveDataFiltering.Test", "ElmahSensitiveDataFiltering.Test\ElmahSensitiveDataFiltering.Test.csproj", "{9F13A4F9-C437-420D-8D40-85E1729C138F}"

@@ -33,7 +33,7 @@ namespace ElmahSensitiveDataFiltering
 
         internal static void AttachEvent()
         {
-            if (!_eventAttached)
+            if (!_eventAttached && HttpContext.Current != null)
             {
                 lock (_locker)
                 {

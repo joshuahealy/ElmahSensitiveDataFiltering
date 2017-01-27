@@ -33,11 +33,11 @@ namespace ElmahSensitiveDataFiltering
         public ElmahSensitiveDataAttribute(params string[] sensitiveFormDataNames)
         {
             _sensitiveFormDataNames = sensitiveFormDataNames.Select(s => s.ToLowerInvariant());
-            ElmahSensitiveDataFilterEventHandler.AttachEvent();
         }
 
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
+            ElmahSensitiveDataFilterEventHandler.AttachEvent();
             filterContext.HttpContext.Items.Add(Constants.HttpContextItemsKey, _sensitiveFormDataNames);
         }
     }

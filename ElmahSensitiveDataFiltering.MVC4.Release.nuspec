@@ -3,18 +3,18 @@
   <metadata>
     <id>ElmahSensitiveDataFiltering.MVC4</id>
     <title>ElmahSensitiveDataFiltering</title>
-    <version>0.1.1</version>
+    <version>0.1.2</version>
     <authors>Joshua Healy</authors>
     <owners>Joshua Healy</owners>
-    <description>Package for sanitising sensitive form values in ELMAH logs for MVC4</description>
+    <description>Package for sanitising sensitive form values in ELMAH logs for MVC4+</description>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>ELMAH MVC MVC4 ASP.NET</tags>
-    <projectUrl>https://github.com/appclay/ElmahSensitiveDataFiltering</projectUrl>
+    <projectUrl>https://github.com/joshuahealy/ElmahSensitiveDataFiltering</projectUrl>
     <frameworkAssemblies>
       <frameworkAssembly assemblyName="System.Configuration" targetFramework="net40" />
     </frameworkAssemblies>
     <dependencies>
-      <dependency id="elmah.corelibrary" />
+      <dependency id="elmah.corelibrary" version="1.2" />
       <dependency id="Microsoft.AspNet.Mvc" version="4.0" />
     </dependencies>
   </metadata>
